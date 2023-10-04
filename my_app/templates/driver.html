@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVER</title>
+    <a href="{% url 'bus_page'%}">Bus Details</a>
+    <a href="{% url 'trip_page'%}">Trip Details</a>
+</head> 
+<body>
+    <section class="">
+        <h1>WELCOME TO YY BUS COMPANY
+        <h2>DRIVERS DETAILS</h2>
+    </section>
+    <div class="container-2">
+        <p><form action="form-group" id="space" method="POST"></form></p>
+    
+    <form action="#">
+
+            
+            
+                
+                <p><input type="driver_id" name="Driver_id" id="input-1" placeholder="Driver_id" onkeyup="checkInput"></p>
+               
+                <p><input type="text" name="Driver_Name" id="input-2" placeholder="Driver_Name" onkeyup="checkInput"></p>
+               
+                <p><input type="text" name="Address" id="input-3" placeholder="Address" onkeyup="checkInput"></p>
+                
+                <p><input type="contact" name="Contact" id="input-4" placeholder="Contact" onkeyup="checkInput"></p>
+               
+                <p><input type="bus_id" name="Bus_id" id="input-5" placeholder="Bus_id" onkeyup="checkInput"></p>
+                
+                
+                <ul id="task-list">
+                    
+                <p><button id="btn-add" onclick="AddTask()">AddTask</button></p> 
+                </ul>            
+               
+               
+              
+                
+            
+            </div>
+             
+          
+          <table>
+            <table width="700px" border="1px" border-collapse: collapse;>
+            <tr>
+                <th>Driver_id</th>
+                <th>Driver_Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Bus_id</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Tororo</td>
+                <td>+256 786003117</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sam</td>
+                <td>Kampala</td>
+                <td>+256 771459421</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Paul</td>
+                <td>Kumi</td>
+                <td>+256 771459421</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Patrick</td>
+                <td>Nansana</td>
+                <td>+256 771457821</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pius</td>
+                <td>Kawempe</td>
+                <td>+256 770259421</td>
+                <td>5</td>
+            </tr>
+            
+          </table>
+          
+        
+</body>
+</html>

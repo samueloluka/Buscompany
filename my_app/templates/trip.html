@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Details</title>
+    
+    <a href="{% url 'driver_page'%}">Driver Details</a>
+</head>
+<body>
+    <section class="">
+        <h1>WELCOME TO YY BUS COMPANY
+        <h2>TRIP DETAILS</h2>
+    </section>
+        
+      <form action="#">
+        <div id="menu-div"> 
+            
+            <p><input type="trip_id" name="Trip_id" id="menu-div" placeholder="Trip_id"></p>
+            <p><input type="text" name="Trip_date" id="menu-div" placeholder="Trip_date"></p>
+            
+            <p><input type="text" name="Departure_time" id="menu-div" placeholder="Departure_time"></p>
+           
+            <p><input type="text" name="Departure_place" id="menu-div" placeholder="Departure_place"></p>
+           
+            <p><input type="text" name="Destination" id="menu-div" placeholder="Destination"></p>
+          
+            <p><input type="amount" name="Amount" id="menu-div" placeholder="Amount"></p>
+           
+            <p><input type="bus_id" name="Bus_id" id="menu-div" placeholder="Bus_id"></p>
+            
+           
+            <ul id="task-list">
+                    
+                <p><button id="btn-add" onclick="AddTask()">AddTask</button></p> 
+                </ul>     
+
+        </div>
+
+        
+          <table>
+            <tr>
+
+          <table width="700px" border="4px">
+                <th>Trip_id</th>
+                <th>Trip_date</th>
+                <th>Departure_time</th>
+                <th>Departure_place</th>
+                <th>Destination</th>
+                <th>Amount</th>
+                <th>Bus_id</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2023/08/11</td>
+                <td>4:00</td>
+                <td>Kampala</td>
+                <td>Ngora</td>
+                <td>50000</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2023/08/13</td>
+                <td>2:00</td>
+                <td>Jinja</td>
+                <td>Kumi</td>
+                <td>34000</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2023/08/17</td>
+                <td>8:00</td>
+                <td>Kibuli</td>
+                <td>Nansana</td>
+                <td>12000</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2023/08/19</td>
+                <td>11:00</td>
+                <td>Katwe</td>
+                <td>Kibuli</td>
+                <td>10000</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2023/08/22</td>
+                <td>6:00</td>
+                <td>Nabweru</td>
+                <td>Mukono</td>
+                <td>15000</td>
+                <td>5</td>
+            </tr>
+            </tr>
+            </tr>
+            
+          </table>
+          
+          
+    
+</body>
+</html>
