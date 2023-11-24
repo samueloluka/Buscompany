@@ -1,0 +1,31 @@
+{% extends './base.html' %}
+{% block content %}
+    {% load crispy_forms_tags %}
+    {% load static %}
+    
+    
+        <title>Django my_app</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
+
+    
+        <hi>Edit -{{bus.plate_no}} </hi>
+
+        <div class="container">
+            <form method="POST">
+                {% csrf_token %}
+
+                {{form|crispy}}
+
+                <input type="Submit" value="Submit" class="btn btn-success">
+                <a class="btn btn-danger" href="{% url 'add_bus_page' %}">Cancel</a>
+
+                {% if message %}
+                    {{message}}
+                {% endif %}
+
+            </form>
+        </div>
+{% endblock content %}        
+        
+    
